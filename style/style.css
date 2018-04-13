@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Roboto mono';
+    src: url('fonts/RobotoMono-Regular.ttf')  format('truetype');
+}
+
+html {
+    font-family: "Roboto mono";
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    padding: 25px;
+    background-color: #333;
+    color: #eee;
+}
+
+.content {
+    margin: auto;
+    margin-top: 50px;
+    width: 600px;
+    background-color: #aaa;
+    padding: 25px;
+    text-align: center;
+}
+
+.correct .message,
+.answerBtn.correct {
+    color: #fff;
+    background-color: #318d31;
+}
+
+.wrong .message,
+.answerBtn.wrong {
+    color: #fff;
+    background-color: #d22b2b;
+}
+
+.correct .correctText {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+    display: inline-block;
+    margin: auto;
+    width: 200px;
+    padding: 10px 15px;
+}
+
+button.block {
+    display: block;
+}
+
+#questionDiv #nextQuestion {
+    display: none;
+}
+
+#questionDiv.wrong #nextQuestion,
+#questionDiv.correct #nextQuestion {
+    display: inline-block;
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+#memoryListCont {
+    width: 30%;
+    display: inline-block;
+    float: left;
+    text-align: left;
+    min-height: 100px;
+}
+
+#memoryFlagsCont {
+    width: 70%;
+    display: inline-block;
+}
